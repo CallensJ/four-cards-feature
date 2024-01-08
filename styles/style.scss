@@ -1,41 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 //colors
 $Very-Dark-Blue: hsl(234, 12%, 34%);
 $Grayish-Blue: hsl(229, 6%, 66%);
 
-*,*:before,*:after{
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html{
-    margin:0;
-    padding: 0;
-    box-sizing: inherit;
-    font-family: 'Poppins', sans-serif;
-    font-size: 100%;
+html {
+  box-sizing: inherit;
+  font-family: "Poppins", sans-serif;
+  font-size: 100%;
 }
-body{
-    font-weight: 400;
+body {
+  font-weight: 400;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2,
+h3 {
+  color: $Very-Dark-Blue;
+}
+.introduction,
+.description {
+  color: $Grayish-Blue;
+}
 
+.introduction {
+  font-size: 0.938rem;
+  padding: 0 1.25rem;
+  text-align: center;
 }
-h2,h3{
-    color: $Very-Dark-Blue;
-}
-.introduction,.description{
-    color: $Grayish-Blue;
+.description {
+  font-size: 0.813rem;
 }
 
+h1,
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
 
-.introduction{
-    font-size: 1.125rem;
-}
-.description{
-    font-size: 0.938rem;
-}
-h1{
-    font-size: 1.375rem;
-}
-h2{
-    font-size: 1.25rem;
+//styles
+.main-container {
+  border: 0.2px solid black;
+  overflow: auto;
+  //height: 100vh;
+  max-width: 375px;
+
+  .inner-container {
+    //border: 1px dashed red;
+    margin: 1.25rem;
+  }
+
+  .text {
+    h1 {
+      font-weight: 300;
+    }
+    .introduction {
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  //cards styles
+  .cards {
+    margin-top: 3.75rem;
+    .card {
+      //border: 1px solid red;
+      border-radius: 0.625rem;
+
+      margin-bottom: 1.25rem;
+      box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.4);
+      -webkit-box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.4);
+
+      .inner-card {
+        padding: 1.25rem;
+        .description {
+          line-height: 1.563rem;
+        }
+
+        .card-icon--container {
+          margin-top: 1rem;
+          display: flex;
+          justify-content: flex-end;
+          .card__icon {
+            margin-top: 2rem;
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+        }
+      }
+    }
+    .card-1 {
+      .card-border-top {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: hsl(180, 62%, 55%);
+      }
+    }
+    .card-2 {
+      .card-border-top {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: hsl(0, 78%, 62%);
+      }
+    }
+    .card-3 {
+      .card-border-top {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: hsl(34, 97%, 64%);
+      }
+    }
+    .card-4 {
+      .card-border-top {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: hsl(212, 86%, 64%);
+      }
+    }
+  }
 }
