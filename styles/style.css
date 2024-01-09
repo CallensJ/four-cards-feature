@@ -70,7 +70,7 @@ h2 {
   box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 5px 5px 12px -5px rgba(0, 0, 0, 0.4);
-  max-width: 300px;
+  max-width: 18.75rem;
 }
 .main-container .cards .card .inner-card {
   padding: 1.25rem;
@@ -113,7 +113,7 @@ h2 {
   background-color: hsl(212, 86%, 64%);
 }
 
-@media (min-width: 400px) {
+@media (min-width: 1300px) {
   .inner-container {
     position: relative;
   }
